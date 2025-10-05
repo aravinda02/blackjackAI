@@ -1,12 +1,26 @@
-#include <iostream>
+#pragma once
+
 #include <string>
 
-class Card{
+class Card {
     public:
-    std::string value;
-    std::string colour;
-    
-    private:
-    std::string colours[4] = {"Hearts", "Diamonds", "Spades", "Clubs"};
+    Card();
+    Card(const std::string value, const std::string colour): 
+    value(value), colour(colour) {};
 
-};
+
+    std::string getValue() const;
+    std::string getColour() const;
+
+    
+    void setValue(std::string v);{
+        value = v;
+
+    }
+    void setColour(std::string c){
+        colour = c
+    };
+
+
+
+}

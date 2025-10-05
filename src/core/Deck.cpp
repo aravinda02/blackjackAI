@@ -7,7 +7,6 @@ class Deck{
     public :
     Deck(int numDecks=1);
     void shuffle();
-    Card dealCard();
     bool isEmpty() const;
     void reset();
 
